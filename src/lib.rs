@@ -25,10 +25,12 @@ mod tests {
     use super::*;
     use near_sdk::test_utils::{get_logs, VMContextBuilder};
     use near_sdk::{testing_env, AccountId};
+    use near_sdk::json_types::{ValidAccountId};
 
     // part of writing unit tests is setting up a mock context
     // provide a `predecessor` here, it'll modify the default context
-    fn get_context(predecessor: AccountId) -> VMContextBuilder {
+    // predecessor type should be ValidAccountId not AccountId, defined by crate docs.    
+    fn get_context(predecessor: ValidAccountId) -> VMContextBuilder {
         let mut builder = VMContextBuilder::new();
         builder.predecessor_account_id(predecessor);
         builder
