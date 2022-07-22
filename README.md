@@ -19,5 +19,5 @@ To get started with this template:
 
 **Get more info at:**
 
-* [Rust Smart Contract Quick Start](https://docs.near.org/docs/develop/contracts/rust/intro)
+* [Rust Smart Contract Quick Start](https://docs.near.org/develop/prerequisites)
 * [Rust SDK Book](https://www.near-sdk.io/)
